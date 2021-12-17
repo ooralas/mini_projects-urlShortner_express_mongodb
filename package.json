@@ -1,0 +1,30 @@
+{
+  "name": "urlshortner",
+  "version": "1.0.0",
+  "description": "an express app that generate short url",
+  "main": "index.js",
+  "engines": {
+    "node": "14.17.0"
+  },
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ooralas/mini_projects-urlShortner_express_mongodb.git"
+  },
+  "author": "Salar Al Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ooralas/mini_projects-urlShortner_express_mongodb/issues"
+  },
+  "homepage": "https://github.com/ooralas/mini_projects-urlShortner_express_mongodb#readme",
+  "dependencies": {
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "mongoose": "^6.1.2",
+    "shortid": "^2.2.16",
+    "valid-url": "^1.0.9"
+  }
+}
