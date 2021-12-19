@@ -13,11 +13,7 @@ router.post('/shorten', async (req, res)=> {
     const baseUrl = config.get('baseUrl')
 
     //check if alias has been reserved
-    let userAlias = await Url.findOne({alias})
-    if(userAlias){
-        res.status(401).json('Alias has already been given')
-        return;
-    }
+
 
     if(!validUrl.isUri(baseUrl)){
         return res.status(401).json('Invalid baseURl')
@@ -29,8 +25,12 @@ router.post('/shorten', async (req, res)=> {
     if(validUrl.isUri(longUrl)) {
         try {
             let url = await Url.findOne({longUrl})
+            let userAlias = await Url.findOne({alias})
             if(url){
                 return res.json(url)
+            }else if(userAlias){
+                    res.status(401).json('Alias has already been given!, please try another Alias ')
+                    return;
             } else {
                 if(alias && alias.length > 4){
                     const shortUrl = baseUrl+ '/' + alias
