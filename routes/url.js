@@ -25,9 +25,9 @@ router.post('/shorten', async (req, res)=> {
     if(validUrl.isUri(longUrl)) {
         try {
             let url = await Url.findOne({longUrl})
-            let userAlias = await Url.findOne({alias})
+            // let userAlias = await Url.findOne({alias})
             if(url){
-                if(userAlias){
+                if(alias){
                     return res.status(401).json('Alias has already been given!, please try another Alias ')
                 }
                 return res.json(url)
