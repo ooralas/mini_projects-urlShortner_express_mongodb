@@ -38,8 +38,8 @@ User hat 2 Möglichkeiten um den URL zu verkürzen:
     * request
     ```javascript
      let url = {
-      longUrl : "https://www.google.com/",
-      alias: "https://www.netflix.com/"
+      longUrl : "https://www.netflix.com/",
+      alias: "netflixAlias"
      }
 
     fetch('https://miniprojects-urlshortner.herokuapp.com/api/url/shorten', {
