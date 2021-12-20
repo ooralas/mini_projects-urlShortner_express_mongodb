@@ -22,6 +22,7 @@
   "homepage": "https://github.com/ooralas/mini_projects-urlShortner_express_mongodb#readme",
   "dependencies": {
     "config": "^3.3.6",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^6.1.2",
     "shortid": "^2.2.16",
