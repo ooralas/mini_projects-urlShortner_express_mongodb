@@ -1,5 +1,5 @@
 # URLShortner RESTful API
-Die App handelt sich, um eine RESTful API, die die längere URLs verkürzt. Diese API bietet dem User die Möglichkeit, den Link mit einem gewünschten Alias zu verkürzen
+Eine API, die die längere URLs verkürzt. Diese API bietet dem User auch die Möglichkeit, den Link mit einem gewünschten Alias zu verkürzen
 
 ## Usage
 Um die API zu verwenden, müssen die Requests an das folgende Endpoint geschickt werden: <br><br>
