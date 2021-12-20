@@ -6,8 +6,8 @@ Um die API zu verwenden, müssen die Requests an das folgende Endpoint geschickt
 `https://miniprojects-urlshortner.herokuapp.com/api/url/shorten`
 
 User hat 2 Möglichkeiten um den URL zu verkürzen:
-  - URL mit einem genrierten Code verkürzen:
-    * #### request
+  - #### URL mit einem generierten Code verkürzen:
+    * request
     ```javascript
      let url = {
       longUrl : "https://www.google.com/"
@@ -23,7 +23,7 @@ User hat 2 Möglichkeiten um den URL zu verkürzen:
         }
     })
     ```
-    * #### response
+    *  response
     ```json
     {
       "urlCode": "1jV9bLCdC",
@@ -34,8 +34,8 @@ User hat 2 Möglichkeiten um den URL zu verkürzen:
       "__v": 0
     }
     ```
-  - URL mit einem gewünschten Alias verkürzen:
-    * #### request
+  - #### URL mit einem gewünschten Alias verkürzen:
+    * request
     ```javascript
      let url = {
       longUrl : "https://www.google.com/",
@@ -52,7 +52,7 @@ User hat 2 Möglichkeiten um den URL zu verkürzen:
         }
     })
     ```
-    * #### response
+    * response
     ```json
     {
       "longUrl": "https://www.netflix.com/",
