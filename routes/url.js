@@ -25,24 +25,24 @@ router.post('/shorten', async (req, res)=> {
             let url = await Url.findOne({longUrl})
             if(url){
                 return res.json(url)
-            } else if(alias){
-                const searchAlias = await Url.findOne({alias})    
-                if(searchAlias){
-                    return res.status(401).json({
-                        done: false,
-                        reason: 'alias has already been given'
-                    })
-                }
             } else {
-                if(alias && alias.length > 4){
-                    const shortUrl = baseUrl+ '/' + alias
-                    url = new Url({
-                        longUrl,
-                        shortUrl,
-                        alias,
-                        urlCode,
-                        date: new Date()
-                    })
+                if(alias){
+                    let searchAlias = await Url.findOne({alias})    
+                    if(searchAlias){
+                        return res.status(401).json({
+                            done: false,
+                            reason: 'alias has already been given'
+                        })
+                    }else {
+                        const shortUrl = baseUrl+ '/' + alias
+                        url = new Url({
+                            longUrl,
+                            shortUrl,
+                            alias,
+                            urlCode,
+                            date: new Date()
+                        })
+                    }
                 } else {
                     const shortUrl = baseUrl + '/' + urlCode
                     url = new Url({
@@ -52,10 +52,8 @@ router.post('/shorten', async (req, res)=> {
                         date: new Date()
                     })
                 }
-                
-
+            
                 await url.save()
-
                 res.json(url)
             }
         } catch (error) {
