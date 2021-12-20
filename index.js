@@ -2,6 +2,11 @@ const express = require ('express')
 const connectDB = require('./config/db')
 const cors = require('cors');
 const app = express()
+//cors
+app.use(cors({
+    origin: '*'
+}));
+
 
 //Connect to DB
 connectDB();
@@ -12,10 +17,7 @@ app.use(express.json({extends: false}))
 app.use('/', require('./routes/index'))
 app.use('/api/url', require('./routes/url'))
 
-//cors
-app.use(cors({
-    origin: '*'
-}));
+
 
 //@route    GET '/'
 //@dec      When anyone visit the baseurl, he will be forwarded to the Github Repo
