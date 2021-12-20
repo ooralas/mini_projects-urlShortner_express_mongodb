@@ -5,7 +5,6 @@ Eine API, die die längere URLs verkürzt. Diese API bietet dem User auch die M�
 Um die API zu verwenden, müssen die Requests an das folgende Endpoint geschickt werden: <br><br>
 `https://miniprojects-urlshortner.herokuapp.com/api/url/shorten`
 
-### URL verkürzen:
 User hat 2 Möglichkeiten um den URL zu verkürzen:
   - URL mit einem genrierten Code verkürzen:
     * #### request
