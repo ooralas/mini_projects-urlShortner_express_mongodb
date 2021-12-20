@@ -39,7 +39,6 @@ router.post('/shorten', async (req, res)=> {
                             longUrl,
                             shortUrl,
                             alias,
-                            urlCode,
                             date: new Date()
                         })
                     }
