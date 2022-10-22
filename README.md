@@ -4,7 +4,7 @@ Eine API, die die längere URLs verkürzt. Diese API bietet dem User auch die M�
 ## Usage
 Um die API zu verwenden, müssen die Requests an das folgende Endpoint geschickt werden: <br><br>
 `https://blue-smoggy-hermit-crab.cyclic.app/api/url/shorten`
-1) ### URL verkürzen
+### URL verkürzen
     User hat 2 Möglichkeiten um den URL zu verkürzen, am Ende kriegt man einen verkürzten URL, den man nutzen kann, um den langen URL zu bekommen.
       - #### URL mit einem generierten Code verkürzen:
         * request
@@ -63,5 +63,3 @@ Um die API zu verwenden, müssen die Requests an das folgende Endpoint geschickt
           "__v": 0
         }
         ```
-2) ### Den verkürzten URL verwenden
-    Man kann den verkürzten URL verwenden, in dem man 
