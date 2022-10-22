@@ -3,7 +3,7 @@ Eine API, die die längere URLs verkürzt. Diese API bietet dem User auch die M�
 
 ## Usage
 Um die API zu verwenden, müssen die Requests an das folgende Endpoint geschickt werden: <br><br>
-`https://miniprojects-urlshortner.herokuapp.com/api/url/shorten`
+`https://blue-smoggy-hermit-crab.cyclic.app//api/url/shorten`
 1) ### URL verkürzen
     User hat 2 Möglichkeiten um den URL zu verkürzen, am Ende kriegt man einen verkürzten URL, den man nutzen kann, um den langen URL zu bekommen.
       - #### URL mit einem generierten Code verkürzen:
@@ -13,7 +13,7 @@ Um die API zu verwenden, müssen die Requests an das folgende Endpoint geschickt
           longUrl : "https://www.google.com/"
          }
 
-        fetch('https://miniprojects-urlshortner.herokuapp.com/api/url/shorten', {
+        fetch('https://blue-smoggy-hermit-crab.cyclic.app/api/url/shorten', {
           method: 'post',
           mode:"cors",
           body: JSON.stringify(url),
@@ -28,7 +28,7 @@ Um die API zu verwenden, müssen die Requests an das folgende Endpoint geschickt
         {
           "urlCode": "1jV9bLCdC",
           "longUrl": "https://www.google.com/",
-          "shortUrl": "https://miniprojects-urlshortner.herokuapp.com/1jV9bLCdC",
+          "shortUrl": "https://blue-smoggy-hermit-crab.cyclic.app/1jV9bLCdC",
           "date": "Mon Dec 20 2021 12:29:58 GMT+0000 (Coordinated Universal Time)",
           "_id": "61c07746235084a25e9d2c98",
           "__v": 0
@@ -42,7 +42,7 @@ Um die API zu verwenden, müssen die Requests an das folgende Endpoint geschickt
           alias: "netflixAlias"
          }
 
-        fetch('https://miniprojects-urlshortner.herokuapp.com/api/url/shorten', {
+        fetch('https://blue-smoggy-hermit-crab.cyclic.app/api/url/shorten', {
           method: 'post',
           mode:"cors",
           body: JSON.stringify(url),
@@ -57,11 +57,9 @@ Um die API zu verwenden, müssen die Requests an das folgende Endpoint geschickt
         {
           "longUrl": "https://www.netflix.com/",
           "alias": "netflixAlias",
-          "shortUrl": "https://miniprojects-urlshortner.herokuapp.com/netflixAlias",
+          "shortUrl": "https://blue-smoggy-hermit-crab.cyclic.app/netflixAlias",
           "date": "Mon Dec 20 2021 12:33:45 GMT+0000 (Coordinated Universal Time)",
           "_id": "61c07829235084a25e9d2c9c",
           "__v": 0
         }
         ```
-2) ### Den verkürzten URL verwenden
-    Man kann den verkürzten URL verwenden, in dem man 
