@@ -5,8 +5,9 @@ Eine API, die die längere URLs verkürzt. Diese API bietet dem User auch die M�
 Um die API zu verwenden, müssen die Requests an das folgende Endpoint geschickt werden: <br><br>
 `https://blue-smoggy-hermit-crab.cyclic.app/api/url/shorten`
 ### URL verkürzen
-    User hat 2 Möglichkeiten um den URL zu verkürzen, am Ende kriegt man einen verkürzten URL, den man nutzen kann, um den langen URL zu bekommen.
-      - #### URL mit einem generierten Code verkürzen:
+User hat 2 Möglichkeiten um den URL zu verkürzen, am Ende kriegt man einen verkürzten URL, den man nutzen kann, um den langen URL zu bekommen.
+
+- #### URL mit einem generierten Code verkürzen:
         * request
         ```javascript
          let url = {
@@ -34,7 +35,7 @@ Um die API zu verwenden, müssen die Requests an das folgende Endpoint geschickt
           "__v": 0
         }
         ```
-      - #### URL mit einem gewünschten Alias verkürzen:
+- #### URL mit einem gewünschten Alias verkürzen:
         * request
         ```javascript
          let url = {
